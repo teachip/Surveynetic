@@ -6,9 +6,20 @@
     </div>
 
     <div class="main">
-        <div class="top-row px-4">
-            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-        </div>
+        <header class="top-row px-4">
+            <ul class="list-inline" style="margin: inherit">
+                <li class="list-inline-item">
+                    <NavLink class="nav-link" href="about" Match="NavLinkMatch.All">
+                        <span class="oi oi-people" aria-hidden="true"></span> About
+                    </NavLink>
+                </li>
+                <li class="list-inline-item">
+                    <NavLink class="nav-link" href="contacts" Match="NavLinkMatch.All">
+                        <span class="oi oi-envelope-closed" aria-hidden="true"></span> Contacts
+                    </NavLink>
+                </li>
+            </ul>
+        </header>
 
         <div class="content px-4">
             @Body

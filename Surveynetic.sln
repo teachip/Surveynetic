@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Client", "src\Surveynetic.Client\Surveynetic.Client.csproj", "{467EFBD2-6759-486B-B42C-E72745D152DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Client", "src\Surveynetic.Client\Surveynetic.Client.csproj", "{467EFBD2-6759-486B-B42C-E72745D152DE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FEE4CB09-2589-474C-A0ED-C2FAA1DCDE52}"
 EndProject
@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0983A401
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "perf", "perf", "{04686BDB-6908-45F3-A5E2-7CB427501245}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Server", "src\Surveynetic.Server\Surveynetic.Server.csproj", "{93A71236-9186-48DD-8DB8-08B2979F9379}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Server", "src\Surveynetic.Server\Surveynetic.Server.csproj", "{93A71236-9186-48DD-8DB8-08B2979F9379}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Shared", "src\Surveynetic.Shared\Surveynetic.Shared.csproj", "{05E765EB-5EE6-436C-902D-6A8A57673508}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Shared", "src\Surveynetic.Shared\Surveynetic.Shared.csproj", "{05E765EB-5EE6-436C-902D-6A8A57673508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Server.Domain", "src\Surveynetic.Server.Domain\Surveynetic.Server.Domain.csproj", "{8EF883BC-89E0-404B-89E9-E8C8C13E1E58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Server.Domain", "src\Surveynetic.Server.Domain\Surveynetic.Server.Domain.csproj", "{8EF883BC-89E0-404B-89E9-E8C8C13E1E58}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{12283C88-9A08-449C-BAA4-5AAC202FDF4E}"
 	ProjectSection(SolutionItems) = preProject
@@ -24,11 +24,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Server.Application", "src\Surveynetic.Server.Application\Surveynetic.Server.Application.csproj", "{04C971BB-71BA-4938-8170-9F21BF574DC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Server.Application", "src\Surveynetic.Server.Application\Surveynetic.Server.Application.csproj", "{04C971BB-71BA-4938-8170-9F21BF574DC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Client.Infrastructure", "src\Surveynetic.Client.Infrastructure\Surveynetic.Client.Infrastructure.csproj", "{086DFB06-A874-4099-A9A9-0E51F8C631C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Client.Infrastructure", "src\Surveynetic.Client.Infrastructure\Surveynetic.Client.Infrastructure.csproj", "{086DFB06-A874-4099-A9A9-0E51F8C631C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Server.Infrastructure", "src\Surveynetic.Server.Infrastructure\Surveynetic.Server.Infrastructure.csproj", "{044CA14F-4493-4752-AFCA-4DAB6F3B2E8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Server.Infrastructure", "src\Surveynetic.Server.Infrastructure\Surveynetic.Server.Infrastructure.csproj", "{044CA14F-4493-4752-AFCA-4DAB6F3B2E8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Client.Core", "src\Surveynetic.Client.Core\Surveynetic.Client.Core.csproj", "{F0C6E054-5E3D-41C2-81DE-EEB27C264CDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +66,10 @@ Global
 		{044CA14F-4493-4752-AFCA-4DAB6F3B2E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{044CA14F-4493-4752-AFCA-4DAB6F3B2E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{044CA14F-4493-4752-AFCA-4DAB6F3B2E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C6E054-5E3D-41C2-81DE-EEB27C264CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C6E054-5E3D-41C2-81DE-EEB27C264CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C6E054-5E3D-41C2-81DE-EEB27C264CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C6E054-5E3D-41C2-81DE-EEB27C264CDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{04C971BB-71BA-4938-8170-9F21BF574DC8} = {FEE4CB09-2589-474C-A0ED-C2FAA1DCDE52}
 		{086DFB06-A874-4099-A9A9-0E51F8C631C4} = {FEE4CB09-2589-474C-A0ED-C2FAA1DCDE52}
 		{044CA14F-4493-4752-AFCA-4DAB6F3B2E8E} = {FEE4CB09-2589-474C-A0ED-C2FAA1DCDE52}
+		{F0C6E054-5E3D-41C2-81DE-EEB27C264CDD} = {FEE4CB09-2589-474C-A0ED-C2FAA1DCDE52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD72A07C-AA67-419B-9661-2F5AB99CCE38}

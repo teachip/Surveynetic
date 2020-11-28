@@ -15,7 +15,7 @@ namespace Surveynetic.Server.Controllers
         protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
 
         [HttpGet]
-        public async Task<ActionResult> Get()
+        public async Task<ActionResult> GetAsync()
         {
             return Ok(await Mediator.Send(new GetWeatherForecasts()));
         }

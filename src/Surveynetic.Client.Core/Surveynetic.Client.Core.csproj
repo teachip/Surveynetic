@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Surveynetic.Client.Core\Surveynetic.Client.Core.csproj" />
     <ProjectReference Include="..\Surveynetic.Shared\Surveynetic.Shared.csproj" />
   </ItemGroup>
 
