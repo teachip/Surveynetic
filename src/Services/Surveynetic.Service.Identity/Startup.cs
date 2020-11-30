@@ -52,6 +52,8 @@ namespace Surveynetic.Service.Identity
 
             app.UseRouting();
 
+            app.UseCors();
+
             app.UseAuthentication();
             app.UseAuthorization();
 

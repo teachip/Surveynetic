@@ -40,7 +40,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Service.Identit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Service.Identity.Domain", "src\Services\Surveynetic.Service.Identity.Domain\Surveynetic.Service.Identity.Domain.csproj", "{DED5AB0C-64FB-4346-B89F-0B846F4E7AF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveynetic.Service.Identity", "src\Services\Surveynetic.Service.Identity\Surveynetic.Service.Identity.csproj", "{87583986-06F2-4E9D-B4C0-3854A46DF5AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Surveynetic.Service.Identity", "src\Services\Surveynetic.Service.Identity\Surveynetic.Service.Identity.csproj", "{87583986-06F2-4E9D-B4C0-3854A46DF5AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
