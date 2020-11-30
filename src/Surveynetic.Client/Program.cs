@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Surveynetic.Client.Core.Interfaces;
+using Surveynetic.Client.Core.Interfaces.Repositories;
 using Surveynetic.Client.Core.Interfaces.Services;
 using Surveynetic.Client.Infrastructure.Repositories;
 using Surveynetic.Client.Infrastructure.Services;
@@ -19,13 +19,13 @@ namespace Surveynetic.Client
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) })
                 .AddScoped<ILocalStorageService, LocalStorageService>()
-                .AddScoped<IUserService, UserService>();
+                .AddScoped<ICurrentUserService, CurrentUserService>();
 
             builder.Services.AddTransient<IWeatherForecastRepository, WeatherForecastRepository>();
 
             var build = builder.Build();
 
-            var userService = build.Services.GetRequiredService<IUserService>();
+            var userService = build.Services.GetRequiredService<ICurrentUserService>();
             await userService.InitializeAsync();
 
             await build.RunAsync();

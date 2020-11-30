@@ -1,7 +1,7 @@
 ﻿@using Surveynetic.Client.Core.Interfaces.Services
 
 @inherits LayoutComponentBase
-@inject IUserService UserService
+@inject ICurrentUserService UserService
 
 <div class="page">
     <div class="sidebar">
@@ -9,46 +9,50 @@
     </div>
 
     <div class="main">
-        <header class="top-row px-4">
-            <ul class="list-inline" style="margin: inherit">
-                <li class="list-inline-item">
-                    <NavLink class="nav-link" href="about">
-                        <span class="oi oi-book" aria-hidden="true"></span> About
-                    </NavLink>
-                </li>
-                <li class="list-inline-item">
-                    <NavLink class="nav-link" href="contacts">
-                        <span class="oi oi-envelope-closed" aria-hidden="true"></span> Contacts
-                    </NavLink>
-                </li>
-                @if (UserService.User is not null)
-                {
-                    <li class="list-inline-item">
-                        <NavLink class="nav-link" href="@(UserService.User?.UserName)">
-                            <span class="oi oi-person" aria-hidden="true"></span> @(UserService.User?.UserName)
-                        </NavLink>
-                    </li>
-                    <li class="list-inline-item">
-                        <NavLink class="nav-link" href="logout">
-                            <span class="oi oi-account-logout" aria-hidden="true"></span> Log out
-                        </NavLink>
-                    </li>
-                }
-                else
-                {
-                    <li class="list-inline-item">
-                        <NavLink class="nav-link" href="login">
-                            <span class="oi oi-account-login" aria-hidden="true"></span> Sign In
-                        </NavLink>
-                    </li>
-                    <li class="list-inline-item">
-                        <NavLink class="nav-link" href="register">
-                            Sign Up
-                        </NavLink>
-                    </li>
-                }
-            </ul>
-        </header>
+        <div class="top-row px-4">
+            <nav class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-light">
+                <div class="container">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item py-md-2">
+                            <NavLink class="nav-link" href="contacts">
+                                <span class="oi oi-envelope-closed" aria-hidden="true"></span> Contacts
+                            </NavLink>
+                        </li>
+                        <li class="nav-item py-md-2">
+                            <NavLink class="nav-link" href="about">
+                                <span class="oi oi-book" aria-hidden="true"></span> About
+                            </NavLink>
+                        </li>
+                        @if (UserService.User is not null)
+                        {
+                            <li class="nav-item py-md-2">
+                                <NavLink class="nav-link" href="@(UserService.User?.UserName)">
+                                    <span class="oi oi-person" aria-hidden="true"></span> @(UserService.User?.UserName)
+                                </NavLink>
+                            </li>
+                            <li class="nav-item py-md-2">
+                                <NavLink class="nav-link" href="signout">
+                                    <span class="oi oi-account-logout" aria-hidden="true"></span> Sign out
+                                </NavLink>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item py-md-2">
+                                <NavLink class="nav-link" href="signin">
+                                    <span class="oi oi-account-login" aria-hidden="true"></span> Sign In
+                                </NavLink>
+                            </li>
+                            <li class="nav-item py-md-2">
+                                <NavLink class="nav-link" href="signup">
+                                    Sign Up
+                                </NavLink>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <div class="content px-4">
             @Body

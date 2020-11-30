@@ -1,0 +1,17 @@
+﻿@page "/signout"
+
+@using Surveynetic.Client.Core.Interfaces.Services
+@inject ICurrentUserService UserService
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await UserService.SignOutAsync();
+        }
+        catch
+        {
+        }
+    }
+}

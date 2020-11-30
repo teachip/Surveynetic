@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Surveynetic.Client.Core.Interfaces;
+using Surveynetic.Client.Core.Interfaces.Repositories;
 using Surveynetic.Shared.DTO;
 using System.Threading.Tasks;
 

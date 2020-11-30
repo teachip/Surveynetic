@@ -15,15 +15,22 @@ namespace Surveynetic.Service.Identity.Controllers
 
         protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
 
-        [HttpPost("login")]
-        public async Task<IActionResult> LoginAsync([FromBody] LoginDto dto)
+        [HttpPost("signin")]
+        public async Task<IActionResult> SignInAsync([FromBody] LoginDto dto)
         {
             var result = await Mediator.Send(new LoginRequest { Dto = dto });
             return Ok(result);
         }
 
-        [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync([FromBody] RegisterDto dto)
+        [HttpPost("signup")]
+        public async Task<IActionResult> SignUpAsync([FromBody] RegisterDto dto)
+        {
+            var result = await Mediator.Send(new RegisterRequest { Dto = dto });
+            return Ok(result);
+        }
+
+        [HttpPost("signout")]
+        public async Task<IActionResult> SignOutAsync([FromBody] RegisterDto dto)
         {
             var result = await Mediator.Send(new RegisterRequest { Dto = dto });
             return Ok(result);
